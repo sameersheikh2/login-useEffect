@@ -42,8 +42,8 @@ const Login = (props) => {
     setPasswordIsValid(enteredPassword.trim().length > 6);
   };
 
-  const submitHandler = (event) => {
-    event.preventDefault();
+  const submitHandler = (e) => {
+    e.preventDefault();
     props.onLogin(enteredEmail, enteredPassword);
   };
 
